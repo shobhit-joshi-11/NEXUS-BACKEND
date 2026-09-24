@@ -1,5 +1,9 @@
 const Hospital = require("../models/Hospital")
 
+
+
+
+
 async function createHospital(req, res) {
 
 
@@ -21,6 +25,14 @@ async function createHospital(req, res) {
 
   }
 }
+
+
+
+
+
+
+
+
 
 async function getHospitals(req, res) {
 
@@ -77,6 +89,16 @@ async function updateHospital(req, res) {
 
   }
 }
+
+
+
+
+
+
+
+
+
+
 
 async function deleteHospital(req, res) {
 

@@ -1,6 +1,10 @@
 const Resource = require("../models/Resource")
 
 
+
+
+
+
 async function createResource(req, res) {
 
   try {
@@ -15,6 +19,14 @@ async function createResource(req, res) {
 
   }
 }
+
+
+
+
+
+
+
+
 
 
 async function getResources(req, res) {
@@ -47,6 +59,15 @@ async function getResources(req, res) {
   }
 }
 
+
+
+
+
+
+
+
+
+
 async function getResourceById(req, res) {
 
 
@@ -66,6 +87,14 @@ async function getResourceById(req, res) {
 
   }
 }
+
+
+
+
+
+
+
+
 
 async function updateResource(req, res) {
 
@@ -91,6 +120,15 @@ async function updateResource(req, res) {
 
   }
 }
+
+
+
+
+
+
+
+
+
 
 async function deleteResource(req, res) {
 

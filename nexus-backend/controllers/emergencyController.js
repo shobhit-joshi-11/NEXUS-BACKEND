@@ -11,6 +11,13 @@ const { createPriorityQueue, calculatePriorityScore } = require("../utils/priori
 const { buildGraph, findShortestPath } = require("../utils/dijkstra")
 
 
+
+
+
+
+
+
+
 async function createEmergency(req, res) {
 
   try {
@@ -39,6 +46,12 @@ async function createEmergency(req, res) {
 
   }
 }
+
+
+
+
+
+
 
 
 async function getEmergencies(req, res) {
@@ -81,7 +94,17 @@ async function getEmergencyById(req, res) {
   }
 }
 
-//YAHA PE EMERGENCY STATUS UPDATE HOGA (LOGIC GALAT AA RHA HAI)
+
+
+
+
+
+
+
+
+
+
+
 
 async function updateEmergencyStatus(req, res) {
   try {
@@ -107,6 +130,15 @@ async function updateEmergencyStatus(req, res) {
 }
 
 
+
+
+
+
+
+
+
+
+
 async function buildPendingQueue() {
 
   const pendingEmergencies = await Emergency.find({ status: "pending" })
@@ -126,6 +158,14 @@ async function buildPendingQueue() {
 
   return queue
 }
+
+
+
+
+
+
+
+
 
 
 async function getPriorityQueue(req, res) {
@@ -150,6 +190,13 @@ async function getPriorityQueue(req, res) {
     res.status(500).json({ message: error.message })
   }
 }
+
+
+
+
+
+
+
 
 
 
